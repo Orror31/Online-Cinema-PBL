@@ -3,9 +3,525 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Home | COCOTRIO</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c25cabee86.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="Images/Cococtrio_LOGO-removebg-preview.png" type="image/x-icon">
+    
 </head>
 <body>
-    
+    <div class="header">
+    <header>
+        <input type="checkbox" name="" id="chk1">
+        <a href="Index.html">
+            <img class="logo" src="Images/Cococtrio_LOGO-removebg-preview.png" alt="Logo" >
+        </a>
+        <div class="search-box">
+            <form action="">
+                <input type="text" name="search" is="srch" placeholder="Search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="signup.html">
+                <i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i>
+            </a></li>
+        </ul>
+        <div class="menu">
+            <label for="chk1">
+                <i class="fa fa-bars"></i>
+            </label>
+        </div>
+    </header>
+      <div class="nav">
+        <ul class="nav second-nav">
+            <li class="nav-item"><a href="movie.html" class="nav-link">Movies</a></li>
+            <li class="nav-item"><a href="serie.html" class="nav-link">Series</a></li>
+            <li class="nav-item"><a href="animation.html" class="nav-link">Annimation </a></li>
+        </ul>
+    </div>
+</div>
+
+   
+    <div class="container-fluid" style="align-items: center; justify-content: center;">
+        <div class="row p-0">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <img src="Images/exhuma(slideshow2).jpg" style="width:100%; height:350px; text-align: center;" >
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="Images/Lovely runner cover.jpg" style="width:100%" height="350px">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="Images/QUEEN OF TEARS (slideshow).jpg" style="width:100%" height="350px">
+                </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+                
+                <script>
+                let slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+                </script>
+                
+        </div>
+    <div class="row p-5">
+        <h1 class="text-light">Popular Lists</h1>
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+                <a href="Queen_of_tear.html">
+                    <li class="card">
+                        <div class="img"><img src="Serie_img_vid/Lovely Runner 2024 Romance 1 season.jpg" alt="" draggable="false"></div>
+                        <h2>Lovely Runner</h2>
+                        <span>2024 . Romance . 1season</span>
+                    </li></a>
+                <a href="Queen_of_tear.html">
+                <li class="card">
+                    <div class="img"><img src="Images/Queen of Tears (2024) Romance kdrama series.jpg" alt="" draggable="false"></div>
+                    <h2>Queen of Tears</h2>
+                    <span>2024 . Romance . 1season</span>
+                </li></a>
+
+                <li class="card">
+                    <div class="img"><img src="Images/Badland Hunters (2024) Action movie.jpg" alt="" draggable="false"></div>
+                    <h2>Badland Hunters</h2>
+                    <span>2024 . Action</span>
+                </li>
+
+                <a href="Damsel.html">
+                    <li class="card">
+                        <div class="img"><img src="Images/Damsel (2024) action, adventure, movie.jpg" alt="" draggable="false"></div>
+                        <h2>Damsel</h2>
+                        <span>2024 . Action/Adventure</span>
+                    </li>
+                </a>
+
+                <li class="card">
+                    <div class="img"><img src="Images/Parasyte The Grey (2024) Horror, series.jpg" alt="" draggable="false"></div>
+                    <h2>Parasyte The Grey</h2>
+                    <span>2024 . Horror . 1season</span>
+                </li>
+
+                <li class="card">
+                    <div class="img"><img src="Images/3 Body Problem (2024) Sci-fi, series.jpg" alt="" draggable="false"></div>
+                    <h2>3 Body Problem</h2>
+                    <span>2024 . Sci-fi . 1season</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="Images/Lift (2024) comedy, action, movie.jpg" alt="" draggable="false"></div>
+                    <h2>Lift</h2>
+                    <span>2024 . Comedy/Action</span>
+                </li>
+
+                <li class="card">
+                    <div class="img"><img src="Images/Spaceman (2024) Sci-fi, adventure, movie.jpg" alt="" draggable="false"></div>
+                    <h2>Spaceman</h2>
+                    <span>2024 . Sci-fi/Adventure</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="Images/Talk to me (2023).jpg" alt="" draggable="false"></div>
+                    <h2>Talk to me</h2>
+                    <span>2023 . Romance . 1season</span>
+                </li>
+
+                <li class="card">
+                    <div class="img"><img src="Images/Captain Miller (2024) Action,Adventure.jpg" alt="" draggable="false"></div>
+                    <h2>Captain Miller</h2>
+                    <span>2024 . Action/Adventure</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="Images/Fighter (2024) Action,Thriller.jpg" alt="" draggable="false"></div>
+                    <h2>Fighter</h2>
+                    <span>2024 . Action/Thriller</span>
+                </li>
+
+                <li class="card">
+                    <div class="img"><img src="Images/Kung Fu Panda 4 (2024) ComedyAdventure.jpg" alt="" draggable="false"></div>
+                    <h2>Kung Fu Panda 4</h2>
+                    <span>2024 . Comedy/Adventure</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="Images/Love Lies Bleeding (2024) Thirller,Crime.jpg" alt="" draggable="false"></div>
+                    <h2>Love Lies Bleeding</h2>
+                    <span>2024 . Thirller/Crime</span>
+                </li>
+
+                <li class="card">
+                    <div class="img"><img src="Images/Megan (2023).jpg" alt="" draggable="false"></div>
+                    <h2>Megan</h2>
+                    <span>2022 . Horror/Sci-fi </span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="Images/Mr & Mrs Smith (2024) action, series.jpg" alt="" draggable="false"></div>
+                    <h2>Mr & Mrs Smith</h2>
+                    <span>2024 . Action</span>
+                </li>
+
+                <li class="card">
+                    <div class="img"><img src="Images/Murder Mubarak (2024) Mystery,Comedy.jpg" alt="" draggable="false"></div>
+                    <h2>Murder Mubarak</h2>
+                    <span>2024 . Mystery/Comedy</span>
+                </li>
+
+                <li class="card">
+                    <div class="img"><img src="Images/My Name Is Loh Kiwan (2024) Romance,Drama.jpg" alt="" draggable="false"></div>
+                    <h2>My Name Is Loh Kiwan</h2>
+                    <span>2024 . Romance/Drama</span>
+                </li>
+
+                <li class="card">
+                    <div class="img"><img src="Images/Om Bheem Bush (2024) Horror,Comedy.jpg" alt="" draggable="false"></div>
+                    <h2>Om Bheem Bush</h2>
+                    <span>2024 . Horror/Comedy</span>
+                </li>
+
+                <li class="card">
+                    <div class="img"><img src="Images/The Fall Guy (2024) Action,Comedy.jpg" alt="" draggable="false"></div>
+                    <h2>The Fall Guy</h2>
+                    <span>2024 .  Action/Comedy</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="Images/Upgraded (2024) Comedy,Romance.jpg" alt="" draggable="false"></div>
+                    <h2>Upgraded </h2>
+                    <span>2024 . Comedy/Romance</span>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </div> 
+    </div>
+</div>
+<!--Movies Lists-->
+<div class="row ">
+        <h1 class="text-light" style="margin-left: 60px;">Movies</h1>
+        <div class="wrapper seemore-wrapper">
+		<ul>
+            <a href="Damsel.html">
+			<li class="card">
+                <div class="img"><img src="Images/Damsel (2024) action, adventure, movie.jpg" alt=""></div>
+                <h2 style="text-align: center;">Damsel</h2>
+                <span style="text-align: center;">2024 . Action/Adventure</span>
+            </li></a>
+			<li class="card">
+                <div class="img"><img src="Movie_img/The Ganstar, The Cops, Devil (2019) CrimeAction.jpg" alt=""></div>
+                <h2>The Gangster...</h2>
+                <span>2019 . Crime/Action</span>
+            </li>
+			<li class="card">
+                <div class="img"><img src="Images/Lift (2024) comedy, action, movie.jpg" alt=""></div>
+                <h2>Lift</h2>
+                <span>2024 . Comedy/Action</span>
+            </li>
+			<li class="card">
+                <div class="img"><img src="Images/Badland Hunters (2024) Action movie.jpg" alt=""></div>
+                <h2>Badland Hunters</h2>
+                <span>2024 . Action</span>
+            </li>
+			<li class="card">
+                <div class="img"><img src="Images/Spaceman (2024) Sci-fi, adventure, movie.jpg" alt=""></div>
+                <h2>Spaceman</h2>
+                <span>2024 . Sci-fi/Adventure</span>
+            </li>
+			<li class="card">
+                <div class="img"><img src="Movie_img/A Man of Reason (2023) Action, Drama.jpg" alt=""></div>
+                <h2>A Man of Reason</h2>
+                <span>2023 . Action/Drama</span>
+            </li>
+			<li class="card">
+                <div class="img"><img src="Movie_img/About Time (2013) Comedy, Drama, Fantasy.jpg" alt=""></div>
+                <h2>About Time</h2>
+                <span>2013 . Comedy/Drama</span>
+            </li>
+
+            
+			<li class="card">
+                <div class="img"><img src="Movie_img/Changeland (2019) Comedy, Drama.jpg" alt=""></div>
+                <h2>Changeland</h2>
+                <span>2019 . Comedy/Drama</span>
+                <li class="card">
+                    <div class="img"><img src="Movie_img/Chronicle of a Blood Merchant (2015) Drama.jpg" alt=""></div>
+                    <h2>Chronicle of...</h2>
+                    <span>2015 . Drama</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="Movie_img/The Ice Road (2021) ActionThriller Movie.jpeg" alt=""></div>
+                    <h2>The Ice Road</h2>
+                    <span>2021 . Action/Thriller</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="Movie_img/Northern Limit Line (2015) WarThriller Movie.jpg" alt=""></div>
+                    <h2>Northern Limit Line</h2>
+                    <span>2015 . War/Thriller</span>
+                    <li class="card">
+                        <div class="img"><img src="Movie_img/Sixty Minutes 2024 ActionSport Movie.jpg" alt=""></div>
+                        <h2>Sixty Minutes</h2>
+                        <span>2024 . Action/Sport</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="Movie_img/Rebel Moon Part 2 2024.jpeg" alt=""></div>
+                        <h2>Rebel Moon...</h2>
+                        <span>2024 . Action/Adventure</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="Serie_img_vid/The Kissing Booth 2018 RomanceComedy.png" alt=""></div>
+                        <h2>The Kissing Booth</h2>
+                        <span>2018 . Romance/Comedy</span>
+                    </li>
+                
+                
+		</ul>
+        <a href="movie.html"><label class="btn-area" for="btnBox">SEE MORE</label></a>
+	</div>
+</div>
+
+
+
+
+<!--Series row-->
+<div class="row">
+    <div class="wrapper seemore-wrapper" >
+    <h1 class="text-light" style=" margin-left: 60px; margin-bottom: 50px;">Series</h1>
+    <ul>
+        <a href="reply1988.html">
+        <li class="card">
+            <div class="img"><img src="Images/reply1988_poster.jpg" alt=""></div>
+            <h2>Reply 1988</h2>
+            <span>2015 . Comedy/Family</span>
+        </li></a>
+        <li class="card">
+            <div class="img"><img src="Serie_img_vid/Boy Swallows Universe 2024 Drama season1.jpg" alt=""></div>
+            <h2>Boy Swallows U...</h2>
+            <span>2024 . Drama . 1season</span>
+        </li>
+        <li class="card">
+            <div class="img"><img src="Serie_img_vid/Chicken Nugget 2024 Mystery season1.jpg" alt=""></div>
+            <h2>Chicken Nugget</h2>
+            <span>2024 .  Mystery . 1season</span>
+        </li>
+        <li class="card">
+            <div class="img"><img src="Serie_img_vid/Lovely Runner 2024 Romance 1 season.jpg" alt=""></div>
+            <h2>Lovely Runner</h2>
+            <span>2024 . Romance . 1season</span>
+        </li>
+        <li class="card">
+            <div class="img"><img src="Serie_img_vid/One Day 2024 Romance season1.jpg" alt=""></div>
+            <h2>One Day</h2>
+            <span>2024 . Romance . 1season</span>
+        </li>
+        <li class="card">
+            <div class="img"><img src="Serie_img_vid/Not Dead Yet 2023 Sitcom 2 seasons.avif" alt=""></div>
+            <h2>Not Dead Yet</h2>
+            <span>2023 . Sitcom . 2seasons</span>
+        </li>
+        <li class="card">
+            <div class="img"><img src="Serie_img_vid/Everyone Loves Me 2023 Drama season1.jpg" alt=""></div>
+            <h2>Everyone Loves Me</h2>
+            <span>2023 . Drama . 1season</span>
+        </li>
+
+        
+        <li class="card">
+            <div class="img"><img src="Serie_img_vid/Doctor Slump 2024 Romance seanson1.jpg" alt=""></div>
+            <h2>Doctor Slump</h2>
+            <span>2024 . Romance . 1seanson</span>
+            <li class="card">
+                <div class="img"><img src="Serie_img_vid/The Atypical Family 2023 season1.jpg" alt=""></div>
+                <h2>The Atypical Family</h2>
+                <span>2023 . Family . 1season</span>
+            </li>
+            <li class="card">
+                <div class="img"><img src="Serie_img_vid/Abbott Elementary 2021 Mockumentary 3 seasons.jpg" alt=""></div>
+                <h2>Abbott Elementary</h2>
+                <span>2021 .  Mockumentary . 3seasons</span>
+            </li>
+            <li class="card">
+                <div class="img"><img src="Serie_img_vid/Run On 2020 Romance 1 season.jpg" alt=""></div>
+                <h2>Run On</h2>
+                <span>2020 . Romance . 1season</span>
+            </li>
+            <li class="card">
+                <div class="img"><img src="Serie_img_vid/Outer Banks 2020 Drama 3 seasons.jpg" alt=""></div>
+                <h2>Outer Banks</h2>
+                <span>2020 .  Drama . 3seasons</span>
+            </li>
+            <li class="card">
+                <div class="img"><img src="Serie_img_vid/Marry My Husband 2024 Season1 Drama.jpg" alt=""></div>
+                <h2>Marry My Husband</h2>
+                <span>2024 . Drama . 1season</span>
+            </li>
+            <li class="card">
+                <div class="img"><img src="Serie_img_vid/Men In love Season1 Ep24.jpg" alt=""></div>
+                <h2>Men In love</h2>
+                <span>2021 .  Romance/Drama</span>
+            </li>
+                
+    </ul>
+    <a href="serie.html"><label class="btn-area" for="btnBox">SEE MORE</label></a>
+</div>
+</div>
+
+<!--Animation row-->
+<div class="row">
+    <div class="wrapper seemore-wrapper p-4" >
+    <h1 class="text-light" style="margin-left: 60px; margin-bottom: 50px;">Animation</h1>
+    <!--<input id="btnBox2" type="checkbox">-->
+    <ul>
+        <li class="card">
+            <div class="img"><img src="Animation_img/Arrietty 2010 FantasyAdventure.jpg" alt=""></div>
+            <h2>Arrietty</h2>
+            <span>2010 . Fantasy/Adventure</span>
+        </li>
+        <li class="card">
+            <div class="img"><img src="Animation_img/Blue Eye Samurai 2023 Action.jpg" alt=""></div>
+            <h2>Blue Eye Samurai</h2>
+            <span>2023 . Action</span>
+        </li>
+        <li class="card">
+            <div class="img"><img src="Animation_img/Despicable Me 4 2024 FamilyComedy Animation.webp" alt=""></div>
+            <h2>Despicable Me 4</h2>
+            <span>2024 . Family/Comedy</span>
+        </li>
+        <li class="card">
+            <div class="img"><img src="Animation_img/Flavors of Youth 2018 RomanceDrama.jpg" alt=""></div>
+            <h2>Flavors of Youth</h2>
+            <span>2018 . Romance/Drama</span>
+        </li>
+        <li class="card">
+            <div class="img"><img src="Animation_img/Howl's Moving Castle 2024 FantasyAdventure.jpg" alt=""></div>
+            <h2>Howl's Moving...</h2>
+            <span>2024 . Fantasy/Adventure</span>
+        </li>
+        <li class="card">
+            <div class="img"><img src="Animation_img/Inside Out 2 2024 FamilyComedy Animation.jpg" alt=""></div>
+            <h2>Inside Out 2</h2>
+            <span>2024 . Family/Comedy</span>
+        </li>
+        <li class="card">
+            <div class="img"><img src="Animation_img/Justice League Crisis on Infinite Earths 2024 ActionAdventure Animation.jpg" alt=""></div>
+            <h2>Justice League Cr...</h2>
+            <span>2024 . Action/Adventure</span>
+        </li>
+
+        
+        <li class="card">
+            <div class="img"><img src="Animation_img/Moana 2 2023 Adventure.jpg" alt=""></div>
+            <h2>Moana 2</h2>
+            <span>2023 . Adventure</span>
+            <li class="card">
+                <div class="img"><img src="Animation_img/The Garfield Movie 2024 FamilyComedy.jpg" alt=""></div>
+                <h2>The Garfield</h2>
+                <span>2024 . FamilyComedy</span>
+            </li>
+            <li class="card">
+                <div class="img"><img src="Animation_img/PAW Patrol The Mighty Movie 2023 FamilyComedy animation.jpg" alt=""></div>
+                <h2>PAW Patrol The...</h2>
+                <span>2023 . FamilyComedy</span>
+            </li>
+            <li class="card">
+                <div class="img"><img src="Animation_img/Sonic Prime 2022 Action.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vZGRhN2UxNjUtOGJkOS00YzI4LTgyOTQtZGJkMzRkYWJjMTIyLmpwZw==" alt=""></div>
+                <h2>Sonic Prime</h2>
+                <span>2022 . Action</span>
+                <li class="card">
+                    <div class="img"><img src="Animation_img/The Casagrandes 2024 ComedyFantasy Animation.jpg" alt=""></div>
+                    <h2>The Casagrandes</h2>
+                    <span>2024 . Comedy/Fantasy</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="Animation_img/Transformers One 2024 Sci-fiAction.jpg" alt=""></div>
+                    <h2>Transformers One</h2>
+                    <span>2024 . Sci-fi/Action</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="Animation_img/The Larva Island Movie 2020 Comedy.jpg" alt=""></div>
+                    <h2>The Larva Island</h2>
+                    <span>2020 . Comedy</span>
+                </li>
+                
+    </ul>
+    <!--<label class="btn-area" for="btnBox2"><span class="btn1">SEE MORE</span> <span class="btn2">SEE LESS</span></label>-->
+    <a href="animation.html"><label class="btn-area" for="btnBox">SEE MORE</label></a>
+</div>
+</div>
+
+
+    <!--Footer-->
+    <footer class="bg-dark">
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 mb-3 mb-md-0">
+                    <img src="Images/Logo.png" alt="Logo" style="max-width: 200px;">
+                    <p style="color: white; margin-top: 30px;">Endless Entertainment, Effortlessly Enjoyed!</p>
+                </div>
+                <div class="col-sm-12 col-md-3 mb-3 mb-md-0">
+                    <h4>Contact Us</h4>
+                    <br>
+                    <a href=""><i class="fa-brands fa-facebook fa-3x"></i></a>
+                    <br>
+                    <a href=""><i class="fa-brands fa-square-instagram fa-3x"></i></a>
+                    <br>
+                    <a href=""><i class="fa-brands fa-youtube fa-3x"></i></a>
+                </div>
+                <div class="col-sm-12 col-md-3 mb-3 mb-md-0">
+                    <h4>Help</h4>
+                    <br>
+                    <p><a href="" style="color: white;">Privacy</a></p>
+                    <p><a href="" style="color: white;">Help Center</a></p>
+                    <p><a href="refrences.html" style="color: white;">References</a></p>
+                    <h4>Account</h4>
+                    <p><a href="signup.html" style="color: white;">Profile</a></p>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <h4>Support Us</h4>
+                    <br>
+                    <p style="color: white"><i class="fa-solid fa-phone"></i>09250785044</p>
+                        <br>
+                        <h6 style="color: #FFBF00">Kpay</h6>
+                        <p style="color: white"><i class="fa-solid fa-phone"></i>09250785044</p>
+                        <p style="color: white;">Name - Daw Moe Moe Win</p>
+                    <br>
+                        <h6 style="color: #FFBF00">Wave Pay</h6>
+                        <p style="color: white"><i class="fa-solid fa-phone"></i>09250785044</p>
+                        <p style="color: white; margin-bottom: 10px;">Name - Daw Moe Moe Win</p>
+                </div>
+            </div>
+            <hr>
+            <p style="text-align: center; color: white;">© Copyright 2024 www.cocotrio.com All right reserved.
+            </p>
+        </div>
+    </footer>                                        
+
+
+    <script src="JS/index.js"></script>
 </body>
 </html>
