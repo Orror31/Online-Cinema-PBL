@@ -1,0 +1,91 @@
+*{
+	margin: 0; padding: 0;
+	box-sizing: border-box;
+	text-transform: capitalize;
+}
+body{
+	background-color: #000!important;
+}
+.video-container{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 15px;
+	align-items: flex-start;
+	padding: 5px 5%;
+}
+.video-container .main-video{
+	background: transparent;
+	border-radius: 5px;
+	padding: 10px;
+}
+.video-container .main-video video{
+	width: 100%;
+	border-radius: 5px;
+}
+.video-container .main-video .title{
+	color: #ffffff;
+	font-size: 23px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.video-container .video-list{
+	background: #fff;
+	border-radius: 5px;
+	height: 520px;
+	overflow-y: scroll;
+}
+.video-container .video-list::-webkit-scrollbar{
+	width: 7px;
+}
+.video-container .video-list::-webkit-scrollbar-track{
+	background: #ccc;
+	border-radius: 50px;
+}
+.video-container .video-list::-webkit-scrollbar-thumb{
+	background: #666;
+	border-radius: 50px;
+}
+.video-container .video-list .vid video{
+	width: 100px;
+	border-radius: 5px;
+}
+.video-container .video-list .vid{
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	background: #f7f7f7;
+	border-radius: 5px;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid black;
+	cursor: pointer;
+}
+.video-container .video-list .vid:hover{
+	background: #eee;
+}
+.video-container .video-list .vid.active{
+	background: #5D0D0D;
+}
+.video-container .video-list .vid.active .title{
+	color: #fff;
+}
+.video-container .video-list .vid .title{
+	color: #333;
+	font-size: 17px;
+}
+
+/* responsive for video */
+@media (max-width:991px){
+
+	.video-container{
+		grid-template-columns: 1.5fr 1fr;
+		padding: 10px;
+	}
+}
+
+@media (max-width:768px){
+
+	.video-container{
+		grid-template-columns: 1fr;
+	}
+}

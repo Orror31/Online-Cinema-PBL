@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Alumni+Sans+Collegiate+One:ital@1&family=Amatic+SC:wght@700&family=Anton&family=Bebas+Neue&family=Caveat&family=Electrolize&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Orbitron:wght@400..900&family=Rowdies:wght@300;400;700&family=Salsa&family=Ubuntu:wght@300;400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*font-family: "Kanit", sans-serif;*/
+  font-family: "Arvo", serif;
+}
+body{
+    background-color:  #000000!important;
+}
+/***** Header *****/
+
+.logo-header{
+    width: 45%;
+}
+.example{
+    padding-top: 30px;
+}
+form.example input[type=text] {
+    padding: 10px;
+    padding-left: 20px!important;
+    padding-right: 5px;
+    font-size: 17px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    float: left;
+    width: 90%;
+    height: 40px;
+    background: #ffffff;
+    border: 2px double #FFBF00;
+  }
+  form.example ::placeholder{
+    padding-left: 10px;
+  }
+  
+  form.example button {
+    float: left;
+    width: 10%;
+    height: 40px;
+    padding: 5px;
+    background: #FFBF00;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    cursor: pointer;
+    border: 2px double #FFBF00;
+  }
+  
+  form.example button:hover {
+    background: #ffcb2f;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .profile-botton{
+    padding: 10px;
+    border-radius: 50px;
+    width: 46px;
+    background-color: #ffffff;
+    border: none;
+  }
+  .signin-gp{
+    float: right;
+    padding: 30px;
+  }
+  .nav .nav-item a{
+    color: #fff;
+  }
+  .nav .nav-item a:hover{
+    color: #FFBF00;
+  }
+  .second-nav{
+    gap: 50px;
+    padding-left: 20px!important;
+  }
+  .second-nav a{
+    gap: 50px;
+    color: #FFBF00!important;
+    font-size: 20px;
+  }
+  .second-nav a:hover{
+    color: #ffffff!important;
+  }
+
+  /********* Card *********/
+.profile-area{
+  margin-top: 60px;
+    padding: 80px 0;
+}
+.card{
+    background-color: #fff;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5)!important;
+    overflow: hidden!important;
+    border-radius: 30px;
+}
+.img1 img{
+    height:130px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+}
+.img2 img{
+    position: relative!important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 150px;
+    height: 170px;
+    border-radius: 50%;
+    border: 7px solid#fff ;
+    margin-top: -80px;
+
+}
+*{
+    font-family: "Arvo", serif;
+}
+.card:hover .img2 img{
+    border-color: #5D0D0D;
+    transition: .7s;
+}
+.main-text h2{
+    text-transform: uppercase;
+    font-weight:900;
+    font-size: 20px;
+    margin: 0 0 20px;
+    text-align: center;
+}
+.main-text p{
+    font-size: 16px;
+    padding: 0 35px;
+}
+.socials{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.socials i{
+    font-size: 20px;
+    color: #5D0D0D;
+    padding: 0 10px;
+}

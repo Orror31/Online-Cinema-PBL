@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Alumni+Sans+Collegiate+One:ital@1&family=Amatic+SC:wght@700&family=Anton&family=Bebas+Neue&family=Caveat&family=Electrolize&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Orbitron:wght@400..900&family=Rowdies:wght@300;400;700&family=Salsa&family=Ubuntu:wght@300;400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*font-family: "Kanit", sans-serif;*/
+  font-family: "Arvo", serif;
+}
+body{
+    background-color:  #000000!important;
+}
+.card-box{
+    list-style: none;
+    grid-auto-columns: calc((100% / 7) - 12px);
+}
+.loadmore-row{
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 30px;
+    justify-content: center;
+    text-align: center;
+}
+.loadmore-card{
+	width: 170px;
+    height: 200px;
+	background-size: cover;
+	background-position: center center;
+    background: transparent!important;
+}
+.loadmore-row .card img{
+    width: 150px;
+    height: 200px;
+    border-radius: 0px;
+    object-fit: cover;
+    border:none;
+}
+.loadmore-card h2{
+    text-align: center;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 20px 0 5px;
+  }
+.loadmore-card span{
+    text-align: center;
+    color: #FFBF00;
+    font-size: 12px;
+  }
+  .card-box .loadmore-row .loadmore-card:nth-child(1n + 9) {
+	max-height: 0;
+	opacity: 0;
+	transition: 0.2s ease-in;
+}
+.loadmore-container .btn-area {
+	display: block;
+	background: #5D0D0D;
+	color: #ffffff;
+    font-size: 16px;
+	cursor: pointer;
+	float: right;
+	font-weight: 900;
+	width: 130px;
+    height: 40px;
+    text-align: center;
+	margin-top: 150px;
+	border-radius: 50px;
+    padding: 7px;
+}
+/*First btnBox*/
+.loadmore-container .btn-area .btn2 {
+	display: none;
+}
+.loadmore-container #btnBox {
+	display: none;
+}
+.loadmore-container #btnBox:checked~ul li:nth-child(1n + 4) {
+	max-height: 1000px;
+	opacity: 1;
+	transition: 0.2s ease-in;
+}
+.loadmore-container #btnBox:checked~.btn-area .btn2 {
+	display: block;
+}
+.loadmore-container #btnBox:checked~.btn-area .btn1 {
+	display: none;
+}
+/****** Responsive for loadmore Card ******/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Flex Container 
+.flex-container {
+    padding-left: 20px;
+    padding-right: 50px!important;
+    display: flex;
+    background: transparent;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 50px;
+    height: 300px;
+    font-size: 30px;
+  }
+.loadmore-card img{
+    width: 150px;
+    height: 200px;
+} */
