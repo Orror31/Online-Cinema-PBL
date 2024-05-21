@@ -1,0 +1,1849 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Alumni+Sans+Collegiate+One:ital@1&family=Amatic+SC:wght@700&family=Anton&family=Bebas+Neue&family=Caveat&family=Electrolize&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Orbitron:wght@400..900&family=Rowdies:wght@300;400;700&family=Salsa&family=Ubuntu:wght@300;400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*font-family: "Kanit", sans-serif;*/
+  font-family: "Arvo", serif;
+}
+body{
+    background-color:  #000000!important;
+}
+
+    
+
+
+  /***** Show more slider **********/
+
+ a{
+  text-decoration: none!important;
+ }
+ .wrapper {
+    
+    max-width: 1500px;
+    width: 100%;
+    position: relative;
+  }
+  .card .img img {
+    width: 150px;
+    height: 200px;
+    border-radius: 0px;
+    object-fit: cover;
+    border:none;
+  }
+  
+
+.seemore-wrapper {
+    
+	  max-width: 2500px;
+    width: 100%;
+    position: relative;
+	  align-items: center!important;
+    justify-content: center!important;
+}
+.seemore-wrapper ul {
+    padding-top: 50px!important;
+    margin: 20px;
+    margin-left: 30px;
+	  list-style: none;
+}
+ul li .card{
+    margin-top: 0px;
+    margin: 20px;
+}
+ul :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 12px;
+}
+
+.seemore-wrapper ul:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.seemore-wrapper ul li {
+    padding-left: 25px;
+    margin-right: 43px!important;
+	  width: 150px;
+    height: 200px;
+	  margin: 30px 0px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+
+}
+
+.seemore-wrapper ul li:nth-child(1n + 37) {
+	max-height: 0;
+	opacity: 0;
+	transition: 0.2s ease-in;
+}
+.seemore-wrapper .btn-area {
+	display: block;
+	background: #5D0D0D;
+	color: #ffffff;
+    font-size: 16px;
+	cursor: pointer;
+	float: right;
+	font-weight: 900;
+	width: 130px;
+    height: 40px;
+    text-align: center;
+	margin-top: -150px;
+	border-radius: 50px;
+    padding: 7px;
+}
+/*First btnBox*/
+.seemore-wrapper .btn-area .btn2 {
+	display: none;
+}
+.seemore-wrapper #btnBox {
+	display: none;
+}
+.seemore-wrapper #btnBox:checked~ul li:nth-child(1n + 4) {
+	max-height: 1000px;
+	opacity: 1;
+	transition: 0.2s ease-in;
+}
+.seemore-wrapper #btnBox:checked~.btn-area .btn2 {
+	display: block;
+}
+.seemore-wrapper #btnBox:checked~.btn-area .btn1 {
+	display: none;
+}
+
+
+
+/**** Responsive for Card ****/
+@media (max-width: 1290px){
+  .seemore-wrapper ul {
+    margin: 10px;
+    margin-left: 30px;
+	  list-style: none;
+}
+  .seemore-wrapper ul li {
+    padding-left: 20px;
+    margin-right: 40px!important;
+	  width: 150px;
+    height: 200px;
+	  margin: 30px 0px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 150px;
+  height: 200px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+}
+
+@media (max-width: 1265px){
+  .seemore-wrapper ul {
+    margin: 10px;
+    margin-left: 30px;
+	  list-style: none;
+}
+  .seemore-wrapper ul li {
+    padding-left: 30px;
+    margin-right: 30px!important;
+	  width: 150px;
+    height: 200px;
+	  margin: 30px 0px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 150px;
+  height: 200px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 13px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 10px;
+}
+}
+@media (max-width: 1255px){
+  .seemore-wrapper ul li {
+    padding-left: 40px;
+    margin-right: 20px!important;
+	  width: 150px;
+    height: 200px;
+	  margin: 40px 5px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 150px;
+  height: 200px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+}
+
+@media (max-width: 1170px){
+  .seemore-wrapper ul li {
+    padding-left: 20px;
+    margin-right: 20px!important;
+	  width: 140px;
+    height: 200px;
+	  margin: 40px 5px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 140px;
+  height: 200px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+}
+
+@media (max-width: 1110px){
+  .seemore-wrapper ul li {
+    padding-right: 30px!important;
+    margin-right: 10px!important;
+	  width: 135px;
+    height: 200px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 135px;
+  height: 200px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 10px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 8px;
+}
+}
+
+@media (max-width: 1080px){
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 155px;
+    height: 200px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 155px;
+  height: 200px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 13px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 10px;
+}
+}
+
+@media (max-width: 1020px){
+  .seemore-wrapper ul{
+    text-align: center;
+    justify-content: center!important;
+    padding-left: 0px;
+  }
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 150px;
+    height: 200px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 150px;
+  height: 200px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 13px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 10px;
+}
+}
+
+@media (max-width: 995px){
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 145px;
+    height: 200px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 145px;
+  height: 200px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 13px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 10px;
+}
+}
+
+@media (max-width: 970px){
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 140px;
+    height: 200px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 140px;
+  height: 200px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 12px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 9px;
+}
+}
+
+@media (max-width: 945px){
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 170px;
+    height: 230px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 170px;
+  height: 230px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 12px;
+}
+}
+
+@media (max-width: 900px){
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 165px;
+    height: 230px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 165px;
+  height: 230px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 12px;
+}
+}
+
+@media (max-width: 880px){
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 160px;
+    height: 230px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 160px;
+  height: 230px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 11px;
+}
+}
+
+@media (max-width: 860px){
+  .seemore-wrapper ul li {
+    padding-right: 30px!important;
+    margin-right: 10px!important;
+	  width: 155px;
+    height: 230px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 155px;
+  height: 230px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 13px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 10px;
+}
+}
+
+@media (max-width: 840px){
+  .seemore-wrapper ul li {
+    padding-right: 30px!important;
+    margin-right: 10px!important;
+	  width: 150px;
+    height: 220px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 150px;
+  height: 220px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 12px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 9px;
+}
+}
+
+@media (max-width: 820px){
+  .seemore-wrapper ul li {
+    padding-right: 40px!important;
+    margin-right: 10px!important;
+	  width: 145px;
+    height: 220px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 145px;
+  height: 220px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 10px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 8px;
+}
+}
+
+@media (max-width: 800px){
+  .seemore-wrapper ul li {
+    padding-right: 40px!important;
+    margin-right: 10px!important;
+	  width: 140px;
+    height: 220px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 140px;
+  height: 220px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 10px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 8px;
+}
+}
+
+@media (max-width: 780px){
+  .seemore-wrapper ul{
+    text-align: center;
+    justify-content: center!important;
+    padding-left: 0px;
+  }
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 135px;
+    height: 220px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 135px;
+  height: 220px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 10px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 8px;
+}
+}
+
+@media (max-width: 760px){
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 130px;
+    height: 210px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 130px;
+  height: 210px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 10px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 8px;
+}
+}
+
+@media (max-width: 740px){
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 125px;
+    height: 210px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 125px;
+  height: 210px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 10px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 8px;
+}
+}
+
+@media (max-width: 740px){
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 155px;
+    height: 210px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 155px;
+  height: 210px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 10px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 8px;
+}
+}
+
+@media (max-width: 660px){
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 150px;
+    height: 210px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 150px;
+  height: 210px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 10px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 8px;
+}
+}
+
+@media (max-width: 645px){
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 145px;
+    height: 205px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 145px;
+  height: 205px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 10px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 8px;
+}
+}
+
+@media (max-width: 630px){
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 140px;
+    height: 205px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 140px;
+  height: 205px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 10px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 8px;
+}
+}
+
+@media (max-width: 615px){
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 135px;
+    height: 205px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 135px;
+  height: 205px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 10px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 8px;
+}
+}
+
+
+@media (max-width: 600px){
+  .seemore-wrapper ul{
+    text-align: center;
+    justify-content: center!important;
+    padding-left: 10px;
+    padding-right: 0px;
+  }
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 130px;
+    height: 200px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 130px;
+  height: 200px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 10px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 8px;
+}
+}
+
+@media (max-width: 580px){
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 125px;
+    height: 200px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 125px;
+  height: 200px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 10px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 8px;
+}
+}
+
+@media (max-width: 570px){
+  .seemore-wrapper ul{
+    text-align: center;
+    justify-content: center!important;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 120px;
+    height: 180px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 120px;
+  height: 180px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 10px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 7px;
+}
+}
+
+
+@media (max-width: 555px){
+  .seemore-wrapper ul{
+    text-align: center;
+    justify-content: center!important;
+    padding-left: 0px;
+    padding-right: 10px;
+  }
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 120px;
+    height: 180px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 120px;
+  height: 180px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 9px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 7px;
+}
+}
+
+@media (max-width: 540px){
+  .seemore-wrapper ul{
+    text-align: center;
+    justify-content: center!important;
+    padding-left: 0px;
+  }
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 120px;
+    height: 180px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 120px;
+  height: 180px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 9px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 7px;
+}
+}
+
+
+@media (max-width: 532px){
+  .seemore-wrapper ul{
+    text-align: center;
+    justify-content: center!important;
+    padding-left: 0px;
+  }
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 115px;
+    height: 180px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 115px;
+  height: 180px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 9px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 7px;
+}
+}
+
+@media (max-width: 520px){
+  .seemore-wrapper ul{
+    text-align: center;
+    justify-content: center!important;
+    padding-left: 0px;
+  }
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 110px;
+    height: 160px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 110px;
+  height: 160px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 8px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 6px;
+}
+}
+
+@media (max-width: 505px){
+  .seemore-wrapper ul{
+    text-align: center;
+    justify-content: center!important;
+    padding-left: 0px;
+  }
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 105px;
+    height: 160px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 105px;
+  height: 160px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 8px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 6px;
+}
+}
+
+@media (max-width: 490px){
+  .seemore-wrapper ul{
+    text-align: center;
+    justify-content: center!important;
+    padding-left: 0px;
+  }
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 100px;
+    height: 150px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 100px;
+  height: 150px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 7px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 5px;
+}
+}
+
+@media (max-width: 490px){
+  .seemore-wrapper ul{
+    text-align: center;
+    justify-content: center!important;
+    padding-left: 0px;
+  }
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 150px;
+    height: 230px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 150px;
+  height: 230px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 10px;
+}
+}
+
+@media (max-width: 450px){
+  .seemore-wrapper ul{
+    text-align: center;
+    justify-content: center!important;
+    padding-left: 0px;
+  }
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 145px;
+    height: 230px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 145px;
+  height: 230px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 10px;
+}
+}
+
+@media (max-width: 440px){
+  .seemore-wrapper ul{
+    text-align: center;
+    justify-content: center!important;
+    padding-left: 0px;
+  }
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 140px;
+    height: 230px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 140px;
+  height: 230px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 9px;
+}
+}
+
+@media (max-width: 430px){
+  .seemore-wrapper ul{
+    text-align: center;
+    justify-content: center!important;
+    padding-left: 0px;
+  }
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 135px;
+    height: 200px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 135px;
+  height: 200px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 9px;
+}
+}
+
+@media (max-width: 420px){
+  .seemore-wrapper ul{
+    text-align: center;
+    justify-content: center!important;
+    padding-left: 0px;
+  }
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 130px;
+    height: 200px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 130px;
+  height: 200px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 8px;
+}
+}
+
+@media (max-width: 410px){
+  .seemore-wrapper ul{
+    text-align: center;
+    justify-content: center!important;
+    padding-left: 0px;
+  }
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 125px;
+    height: 195px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 125px;
+  height: 195px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 8px;
+}
+}
+
+@media (max-width: 400px){
+  .seemore-wrapper ul{
+    text-align: center;
+    justify-content: center!important;
+    padding-left: 0px;
+  }
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 120px;
+    height: 190px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 120px;
+  height: 190px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 13px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 7px;
+}
+}
+
+@media (max-width: 390px){
+  .seemore-wrapper ul{
+    text-align: center;
+    justify-content: center!important;
+    padding-left: 0px;
+  }
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 115px;
+    height: 180px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 115px;
+  height: 180px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 13px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 7px;
+}
+}
+
+@media (max-width: 380px){
+  .seemore-wrapper ul{
+    text-align: center;
+    justify-content: center!important;
+    padding-left: 0px;
+  }
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 110px;
+    height: 180px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 110px;
+  height: 180px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 13px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 6px;
+}
+}
+
+@media (max-width: 370px){
+  .seemore-wrapper ul{
+    text-align: center;
+    justify-content: center!important;
+    padding-left: 0px;
+  }
+  .seemore-wrapper ul li {
+    padding-right: 20px!important;
+    margin-right: 10px!important;
+	  width: 105px;
+    height: 175px;
+	  margin: 40px 15px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 105px;
+  height: 175px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 13px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 6px;
+}
+}
+
+@media (max-width: 360px){
+  .seemore-wrapper ul{
+    text-align: center;
+    justify-content: center!important;
+    padding-left: 0px;
+  }
+  .seemore-wrapper ul li {
+	  width: 110px;
+    height: 170px;
+	  margin: 40px 5px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 110px;
+  height: 170px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 13px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 6px;
+}
+}
+
+@media (max-width: 350px){
+  .seemore-wrapper ul{
+    text-align: center;
+    justify-content: center!important;
+    padding-left: 0px;
+  }
+  .seemore-wrapper ul li {
+	  width: 105px;
+    height: 170px;
+	  margin: 40px 5px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 105px;
+  height: 170px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 13px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-size: 6px;
+}
+}
+
+@media (max-width: 340px){
+  .seemore-wrapper ul{
+    text-align: center;
+    justify-content: center!important;
+    padding-left: 0px;
+  }
+  .seemore-wrapper ul li {
+	  width: 100px;
+    height: 160px;
+	  margin: 40px 5px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 100px;
+  height: 160px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 12px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-weight: 700;
+  font-size: 5px;
+}
+}
+
+@media (max-width: 330px){
+  .seemore-wrapper ul{
+    text-align: center;
+    justify-content: center!important;
+    padding-left: 0px;
+  }
+  .seemore-wrapper ul li {
+	  width: 97px;
+    height: 160px;
+	  margin: 40px 3px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 97px;
+  height: 160px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 12px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-weight: 700;
+  font-size: 5px;
+}
+}
+
+@media (max-width: 320px){
+  .seemore-wrapper ul{
+    text-align: center;
+    justify-content: center!important;
+    padding-left: 0px;
+  }
+  .seemore-wrapper ul li {
+	  width: 90px;
+    height: 150px;
+	  margin: 40px 5px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 90px;
+  height: 150px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 11px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-weight: 700;
+  font-size: 4px;
+}
+}
+
+@media (max-width: 320px){
+  .seemore-wrapper ul{
+    text-align: center;
+    justify-content: center!important;
+    padding-left: 0px;
+  }
+  .seemore-wrapper ul li {
+	  width: 85px;
+    height: 140px;
+	  margin: 40px 5px 70px;
+	  background-size: cover;
+	  background-position: center center;
+	  float: left;
+    background: transparent;
+}
+.card .img img {
+  width: 85px;
+  height: 140px;
+  border-radius: 0px;
+  object-fit: cover;
+  border:none;
+}
+ul .card h2{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 9px;
+  margin: 20px 0 5px;
+}
+ul .card span{
+  text-align: center;
+  color: #FFBF00;
+  font-weight: 700;
+  font-size: 4px;
+}
+}
